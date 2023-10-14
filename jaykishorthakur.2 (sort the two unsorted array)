@@ -1,0 +1,16 @@
+void sortedMerge(int a[], int b[], int res[],  
+                                int n, int m) 
+{ 
+    int i = 0, j = 0, k = 0; 
+    while (i < n) { 
+        res[k] = a[i]; 
+        i += 1; 
+        k += 1; 
+    } 
+    while (j < m) { 
+        res[k] = b[j]; 
+        j += 1; 
+        k += 1; 
+    } 
+    sort(res, res + n + m); 
+} 
